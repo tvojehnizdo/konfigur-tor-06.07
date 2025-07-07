@@ -1,1 +1,2 @@
-vizualizator_safe/config.js
+# Ignoruj OpenAI klíč ve vizualizátoru
+vizualizace/config.js

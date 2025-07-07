@@ -1,0 +1,1 @@
+emailjs.init('YOUR_PUBLIC_KEY');document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();emailjs.send('YOUR_SERVICE_ID','YOUR_TEMPLATE_ID',{email:this.email.value}).then(()=>alert('Odesláno!')).catch(err=>alert('Chyba: '+err));});

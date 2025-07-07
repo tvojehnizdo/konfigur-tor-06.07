@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Konfigurátor Tvoje Hnízdo + AI vizualizace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Konfigurátor domu – Tvoje Hnízdo</h1>
+  <form id="configForm">
+    <label>Typ domu:
+      <select name="type">
+        <option value="small family house">Mini</option>
+        <option value="modern family house">Rodinné</option>
+        <option value="two-storey villa">Velké</option>
+      </select>
+    </label><br />
+    <label>Střecha:
+      <select name="roof">
+        <option value="flat roof">Plochá</option>
+        <option value="gable roof">Sedlová</option>
+      </select>
+    </label><br />
+    <label>Barva fasády:
+      <input type="color" name="color" value="#ffffff" />
+    </label><br />
+    <label>E-mail:
+      <input type="email" name="email" required />
+    </label><br />
+
+    <button type="submit">Odeslat konfiguraci</button>
+    <button type="button" id="generateBtn">Zobrazit AI vizualizaci</button>
+  </form>
+
+  <div id="output">
+    <p id="status"></p>
+    <img id="result" src="" alt="Vizualizace" style="display:none; max-width:100%; margin-top:20px;" />
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

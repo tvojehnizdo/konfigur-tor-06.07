@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Vizualizace domu – Tvoje Hnízdo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>AI Vizualizace vašeho domu</h1>
+  <form id="visualForm">
+    <label>Typ domu:
+      <select name="type">
+        <option value="small family house">Mini</option>
+        <option value="modern family house">Rodinné</option>
+        <option value="two-storey villa">Velké</option>
+      </select>
+    </label><br>
+    <label>Střecha:
+      <select name="roof">
+        <option value="flat roof">Plochá</option>
+        <option value="gable roof">Sedlová</option>
+      </select>
+    </label><br>
+    <label>Barva fasády:
+      <input type="color" name="color" value="#ffffff">
+    </label><br>
+    <button type="submit">Vygenerovat obrázek</button>
+  </form>
+
+  <div id="output">
+    <p id="status"></p>
+    <img id="result" src="" alt="Výsledná vizualizace" style="display:none; max-width:100%; margin-top:20px;">
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
